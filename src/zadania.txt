@@ -1,0 +1,198 @@
+1. Klasa Employee
+Napisz klasę Employee (pracownik) zawierającą następujące pola:
+• name. To pole wskazuje obiekt typu String przechowujący imię i nazwisko pracownika.
+• idNumber. Jest to zmienna typu int przechowująca identyfikator pracownika.
+• department. To pole wskazuje obiekt typu String zawierający nazwę działu, w którym dana osoba pracuje.
+• position. To pole wskazuje obiekt typu String zawierający nazwę stanowiska zajmowanego przez pracownika.
+W tej klasie należy udostępnić następujące konstruktory:
+• Konstruktor przyjmujący jako argumenty wymienione dalej wartości i przypisujący je do odpowiednich pól: imię i nazwisko, identyfikator, dział i stanowisko pracownika.
+• Konstruktor przyjmujący jako argumenty wymienione dalej wartości i przypisujący je do odpowiednich pól: imię i nazwisko oraz identyfikator pracownika. Do pól department i position należy przypisać pusty łańcuch znaków ("").
+• Konstruktor bezargumentowy przypisujący puste łańcuchy znaków ("") do pól name, department i position oraz 0 do pola idNumber.
+Napisz odpowiednie mutatory do zapisywania wartości w polach i akcesory zwracające wartości pól. Po utworzeniu klasy napisz odrębny program tworzący trzy obiekty typu Employee zawierające następujące dane:
+Imię i nazwisko Identyfikator Dział Stanowisko
+Sara Magura 47899 Rachunkowość Wiceprezes
+Marek Janczyk 39119 Informatyka Programista
+Julia Rak 81774 Produkcja Inżynier
+Program powinien zapisywać te dane w trzech obiektach, a następnie wyświetlać na ekranie informacje o każdym pracowniku.
+2. Klasa Car
+Napisz klasę Car (samochód) zawierającą następujące pola:
+• yearModel. Jest to pole typu int przechowujące rocznik samochodu.
+• make. To pole wskazuje obiekt typu String przechowujący markę samochodu.
+• speed. Jest to pole typu int zawierające aktualną szybkość samochodu.
+Oprócz tego klasa powinna obejmować następujący konstruktor i inne metody:
+• Konstruktor. Powinien przyjmować jako argumenty rocznik i markę samochodu. Te wartości należy przypisać do pól yearModel i make obiektu. Ten konstruktor powinien przypisywać wartość 0 do pola speed.
+• Akcesory. Odpowiednie akcesory powinny pobierać wartości zapisane w polach yearModel, make i speed.
+• accelerate. Ta metoda powinna dodawać w każdym swoim wywołaniu 5 do wartości pola speed.
+• brake. Ta metoda powinna odejmować w każdym swoim wywołaniu 5 od wartościpola speed.
+Zademonstruj działanie tej klasy w programie, który tworzy obiekt typu Car, a następnie pięciokrotnie wywołuje metodę accelerate. Po każdym wywołaniu tej metody program ma pobrać aktualną szybkość samochodu i ją wyświetlić. Następnie program ma wywołać pięciokrotnie metodę brake, pobrać aktualną szybkość samochodu i ją wyświetlić.
+3. Klasa z danymi osobowymi
+Zaprojektuj klasę, która przechowuje następujące dane osobowe: imię i nazwisko, adres, wiek i numer telefonu. Napisz odpowiednie akcesory i mutatory. Zademonstruj działanie tej klasy. W tym celu napisz program, który tworzy trzy jej instancje. Jedna powinna przechowywać informacje na Twój temat, dwie pozostałe — na temat Twoich znajomych lub członków rodziny.
+4. Klasa RetailItem
+Napisz klasę RetailItem przechowującą dane na temat produktu ze sklepu detalicznego. Ta klasa powinna obejmować następujące pola:
+• description. To pole wskazuje obiekt typu String zawierający krótki opis produktu.
+• unitsOnHand. To pole to wartość typu int przechowująca liczbę sztuk dostępnych obecnie w magazynie.
+• price. To pole to wartość typu double przechowująca cenę detaliczną produktu.
+Napisz konstruktor, który przyjmuje argumenty odpowiadające każdemu z tych pól, a także mutatory (zapisujące wartości w polach) i akcesory (zwracające wartości pól). Po napisaniu tej klasy napisz odrębny program, który tworzy trzy obiekty typu RetailItem i zapisuje w nich następujące dane:
+Opis Liczba sztuk Cena
+Produkt numer 1 Kurtka 12 159,95
+Produkt numer 2 Markowe dżinsy 40 134,95
+Produkt numer 3 Koszula 20 124,95
+5. Klasa Payroll
+Zaprojektuj klasę Payroll obejmującą pola z imieniem i nazwiskiem pracownika, jego identyfikatorem, stawką godzinową i liczbą przepracowanych godzin. Napisz odpowiednie akcesory i mutatory, a także konstruktor przyjmujący jako argumenty imię i nazwisko pracownika oraz jego identyfikator. Ta klasa powinna też mieć metodę zwracającą wynagrodzenie brutto, obliczane w wyniku pomnożenia liczby przepracowanych godzin przez stawkę godzinową. Napisz program, który ilustruje działanie tej klasy. Program powinien tworzyć obiekt typu Payroll, wyświetlać prośbę o wprowadzenie danych pracownika i wyświetlać pensję brutto.
+6. Klasa TestScores
+Zaprojektuj klasę TestScores z polami przechowującymi wyniki trzech testów. Ta klasa powinna mieć konstruktor, akcesor i mutator pól z wynikami testów, a także metodę zwracającą średni wynik. Zademonstruj działanie tej klasy. W tym celu napisz odrębny program, który tworzy jej instancję. Program powinien wyświetlać prośbę o podanie wyników trzech testów, zapisywanych później w
+obiekcie typu TestScores. Następnie program powinien wyświetlać średni wynik testów zwracany przez dany obiekt typu TestScores.
+7. Klasa Circle
+Napisz klasę Circle (koło) obejmującą następujące pola:
+• radius. Pole typu double.
+• PI. Pole typu final double inicjowane wartością 3.14159.
+Ta klasa powinna też zawierać następujące metody:
+• Konstruktor. Przyjmuje jako argument promień koła.
+• Konstruktor. Konstruktor bezargumentowy ustawiający wartość pola radius na 0.0.
+• setRadius. Mutator pola radius.
+• getRadius. Akcesor pola radius.
+• area. Zwraca powierzchnię koła obliczaną za pomocą wzoru: area = PI * radius * radius
+• diameter. Zwraca średnicę koła obliczaną według wzoru: diameter = radius * 2
+• circumference. Zwraca obwód koła obliczany za pomocą wzoru: circumference = 2 * PI * radius
+Napisz program demonstrujący działanie klasy Circle. Program powinien wyświetlać prośbę o podanie promienia koła, tworzyć obiekt typu Circle, a następnie podawać powierzchnię, średnicę i obwód danego koła.
+8. Klasa Temperature
+Napisz klasę Temperature przechowującą temperaturę w stopniach Fahrenheita. Udostępnij metody pozwalające pobrać temperaturę w stopniach Fahrenheita, Celsjusza i kelwinach. Ta klasa powinna zawierać następujące pole:
+• fahrenheit. Pole typu double przechowujące temperaturę w stopniach Fahrenheita.
+W klasie powinny się też znaleźć następujące metody:
+• Konstruktor. Przyjmuje temperaturę w stopniach Fahrenheita (jako wartość typu double) i zapisują ją w polu ftemp.
+• setFahrenheit. Ta metoda przyjmuje temperaturę w stopniach Fahrenheita (jako wartość typu double) i zapisują ją w polu ftemp.
+• getFahrenheit. Zwraca wartość pola ftemp jako temperaturę w stopniach Fahrenheita (konwersja nie jest potrzebna).
+• celsius. Zwraca wartość pola ftemp przekształconą na stopnie Celsjusza.
+• kelvin. Zwraca wartość pola ftemp przekształconą na kelwiny.
+Do przekształcania temperatury w stopniach Fahrenheita na stopnie Celsjusza zastosuj następujący wzór:
+stopnie Celsjusza = (5/9) × (stopnie Fahrenheita – 32)
+Do konwersji temperatury w stopniach Fahrenheita na kelwiny wykorzystaj poniższy wzór:
+kelwiny = ((5/9) × (stopnie Fahrenheita – 32)) + 273
+Zademonstruj działanie klasy Temperature. W tym celu napisz odrębny program, który wyświetla prośbę o podanie temperatury w stopniach Fahrenheita. Program powinien tworzyć instancję klasy Temperature, przekazując do konstruktora wartość podaną przez użytkownika. Następnie program powinien wywołać metody obiektu w celu wyświetlenia temperatury w stopniach Celsjusza i kelwinach.
+9. Liczba dni w miesiącu
+Napisz klasę MonthDays. Konstruktor tej klasy powinien przyjmować dwa argumenty:
+• liczbę całkowitą reprezentującą numer miesiąca (1 = styczeń, 2 = luty itd.),
+• liczbę całkowitą reprezentującą rok.
+W klasie należy umieścić metodę numberOfDays, która zwraca liczbę dni w podanym miesiącu. W tej metodzie należy zastosować następujące kryteria do identyfikowania lat przestępnych:
+1. Określić, czy rok jest podzielny przez 100. Jeśli tak jest, rok jest przestępny tylko wtedy, gdy jednocześnie jest podzielny przez 400. Na przykład rok 2000 jest przestępny, ale 2100 już nie.
+2. Jeżeli rok nie jest podzielny przez 100, jest rokiem przestępnym wtedy i tylko wtedy, gdy jest podzielny przez 4. Na przykład rok 2008 jest rokiem przestępnym, ale 2009 już nie.
+Zademonstruj działanie tej klasy w programie, który wyświetla prośbę o podanie miesiąca (w formie liczby całkowitej z przedziału od 1 do 12) i roku. Program powinien następnie wyświetlać liczbę dni w danym miesiącu. Oto przykładowy przebieg tego programu:
+Podaj miesiąc (1-12): 2 [Enter]
+Podaj rok: 2008 [Enter]
+29 dni
+10. Gra w oczko
+W tym zadaniu napiszesz program, który umożliwia graczowi rozgrywkę przeciwko komputerowi w odmianie popularnej karcianej gry w oczko. W tej wersji zamiast kart używane są dwie kostki o sześciu ściankach. Zadaniem gracza jest próba wyrzucenia sumarycznej wartości wyższej niż ukryta suma uzyskana przez komputer, przy czym nie można przekroczyć wartości 21.
+Oto kilka sugestii dotyczących projektu tej gry:
+• Każda runda gry odbywa się jako iteracja pętli powtarzanej tak długo, jak długo gracz chce ponowić rzut. Także przekroczenie wartości 21 powoduje zakończenie pracy pętli.
+• Na początku każdej rundy program wyświetla pytanie, czy gracz chce wykonać kolejny rzut, aby uzyskać więcej punktów.
+• W każdej rundzie program symuluje rzut dwiema kostkami o sześciu ściankach. Najpierw wykonywany jest rzut na rzecz komputera, a następnie pojawia się pytanie o to, czy chce rzucać użytkownik. Do zasymulowania działania kostki wykorzystaj klasę Die.
+• W pętli sumowane są punkty komputera i użytkownika.
+• Suma uzyskana przez komputer powinna pozostać ukryta do czasu zakończenia pracy pętli.
+• Po zakończeniu działania pętli suma uzyskana przez komputer jest ujawniana, a strona, która uzyskała więcej punktów bez przekroczenia wartości 21, wygrywa.
+11. Temperatura zamarzania i wrzenia
+W poniżej podano temperaturę zamarzania i wrzenia kilku substancji.
+Substancja
+Temperatura zamarzania [w °C]
+Temperatura wrzenia [w °C]
+Alkohol etylowy –
+114
+78
+Tlen
+218
+183
+Woda
+0
+100
+Zaprojektuj klasę, która zapisuje temperaturę w polu temperature oraz obejmuje odpowiednie akcesory i mutatory tego pola. Oprócz odpowiednich konstruktorów klasa powinna zawierać następujące metody:
+• isEthylFreezing. Ta metoda powinna zwracać wartość logiczną true, jeśli temperatura w polu temperature jest równa temperaturze zamarzania alkoholu etylowego lub niższa. W przeciwnym razie ta metoda powinna zwracać wartość false.
+• isEthylBoiling. Ta metoda powinna zwracać wartość logiczną true, jeśli temperatura w polu temperature jest równa temperaturze wrzenia alkoholu etylowego lub wyższa. W przeciwnym razie ta metoda powinna zwracać wartość false.
+• isOxygenFreezing. Ta metoda powinna zwracać wartość logiczną true, jeśli temperatura w polu temperature jest równa temperaturze zamarzania tlenu lub niższa. W przeciwnym razie ta metoda powinna zwracać wartość false.
+• isOxygenBoiling. Ta metoda powinna zwracać wartość logiczną true, jeśli temperatura w polu temperature jest równa temperaturze wrzenia tlenu lub wyższa. W przeciwnym razie ta metoda powinna zwracać wartość false.
+• isWaterFreezing. Ta metoda powinna zwracać wartość logiczną true, jeśli temperatura w polu temperature jest równa temperaturze zamarzania wody lub niższa. W przeciwnym razie ta metoda powinna zwracać wartość false.
+• isWaterBoiling. Ta metoda powinna zwracać wartość logiczną true, jeśli temperatura w polu temperature jest równa temperaturze wrzenia wody lub wyższa. W przeciwnym razie ta metoda powinna zwracać wartość false.
+Napisz program demonstrujący działanie tej klasy. Powinien on wyświetlać prośbę o podanie temperatury, a następnie wyświetlać listę substancji, które zamarzają lub wrą w tej temperaturze. Na przykład jeśli temperatura wynosi –35°, klasa powinna informować o tym, że woda zamarza, a tlen wrze.
+12. Klasa SavingsAccount
+Zaprojektuj klasę SavingsAccount, która przechowuje roczną stopę oprocentowania i stan konta oszczędnościowego. Konstruktor tej klasy powinien przyjmować początkowy stan konta. Klasa powinna też udostępniać metody do odejmowania wypłacanej kwoty, dodawania deponowanej sumy i dodawania miesięcznych odsetek do stanu konta. Miesięczna stopa oprocentowania to stopa roczna podzielona przez 12. Aby dodać do stanu konta miesięczne odsetki, należy pomnożyć miesięczną stopę oprocentowania przez stan konta, a następnie dodać wynik do tego stanu.
+Przetestuj tę klasę w programie, który oblicza stan konta na koniec danego okresu. Program powinien wyświetlać pytania o roczną stopę oprocentowania, początkowy stan konta i liczbę miesięcy od czasu założenia konta. Następnie w pętli należy uruchomić jedną iterację dla każdego miesiąca i wykonywać następujące operacje:
+a. Wyświetlać pytanie o kwotę zdeponowaną na koncie w danym miesiącu. Należy za pomocą metody klasy dodać tę kwotę do stanu konta.
+b. Wyświetlać pytanie o kwotę wypłaconą z konta w danym miesiącu. Należy za pomocą metody klasy odjąć tę kwotę od stanu konta.
+c. Obliczyć miesięczne odsetki za pomocą metody klasy.
+Po ostatniej iteracji program powinien wyświetlić stan końcowy, łączną sumę zdeponowanych środków, łączną sumę wypłaconych pieniędzy i łączną wartość odsetek.
+13. Pliki z deponowanymi i wypłacanymi kwotami
+Za pomocą Notatnika lub innego edytora tekstu utwórz plik tekstowy Deposits.txt.
+Ten plik powinien zawierać następujące liczby (po jednej na wiersz):
+100.00
+124.00
+78.92
+37.55
+Następnie utwórz plik tekstowy Withdrawals.txt. Powinien on obejmować następujące liczby (po jednej na wiersz):
+29.88
+110.00
+27.52
+50.00
+12.90
+Liczby z pliku Deposits.txt to kwoty zdeponowane na rachunku oszczędnościowym w danym miesiącu, a wartości z pliku Withdrawals.txt to środki wypłacane w tym miesiącu.
+Napisz program, który tworzy instancję napisanej w zadaniu 12. klasy SavingsAccount. Za stan początkowy tego obiektu przyjmij wartość 500.00. Program powinien wczytywać wartości z pliku Deposits.txt i za pomocą metody obiektu dodawać je do stanu konta. Ponadto program powinien wczytywać wartości z pliku Withdrawals.txt i przy użyciu metody obiektu odejmować je od stanu konta. Program powinien też wywoływać metodę klasy, aby obliczyć miesięczne odsetki, a następnie wyświetlać stan końcowy konta i otrzymane odsetki.
+14. Koszty badań
+Napisz klasę Patient zawierającą pola z następującymi danymi:
+• pierwszym imieniem, drugim imieniem i nazwiskiem,
+• adresem ulicy, miastem i kodem pocztowym,
+• numerem telefonu,
+• imieniem i nazwiskiem oraz numerem telefonu osoby kontaktowej.
+Klasa Patient powinna zawierać konstruktor, a także akcesor i mutator dla każdego pola.
+Następnie napisz klasę o nazwie Procedure, która reprezentuje badanie wykonane na pacjencie. Klasa Procedure powinna obejmować pola z następującymi danymi:
+• nazwą badania,
+• datą badania,
+• imieniem i nazwiskiem osoby, która przeprowadziła badanie,
+• opłatą za badanie.
+Klasa Procedure powinna zawierać konstruktor, a także akcesor i mutator dla każdego pola.
+Następnie napisz program, który tworzy instancję klasy Patient inicjowaną przykładowymi danymi. Potem utwórz trzy instancje klasy Procedure inicjowane następującymi danymi:
+Badanie numer 1
+Badanie numer 2
+Badanie numer 3
+Nazwa: badanie fizykalne
+Nazwa: zdjęcie rentgenowskie
+Nazwa: badanie krwi
+Data: dzisiejsza data
+Data: dzisiejsza data
+Data: dzisiejsza data
+Lekarz: dr Iwicki
+Lekarz: dr Jaracz
+Lekarz: dr Szymczak
+Opłata: 250,00 złotych
+Opłata: 500,00 złotych
+Opłata: 200,00 złotych
+Program powinien wyświetlać informacje o pacjencie, o wszystkich trzech badaniach,a także o łącznej cenie za wszystkie trzy badania.
+15. Gra w kości
+Napisz program, który używa klasy Die do prostej gry w kości między komputerem a użytkownikiem. Ten program powinien tworzyć dwie instancje klasy Die (każdą z sześcioma ściankami). Jeden obiekt Die ma reprezentować kostkę komputera, a drugi — kostkę użytkownika.
+Program powinien obejmować pętlę z 10 iteracjami. W każdej iteracji należy rzucać obiema kostkami. Wyrzucenie większej liczby oczek daje zwycięstwo. W przypadku równej liczby oczek w danej rundzie nie ma zwycięzcy.
+W kolejnych iteracjach program powinien zliczać wygrane komputera i użytkownika.Po wykonaniu wszystkich iteracji pętli program ma wyświetlać, kto wygrał całą grę —komputer czy użytkownik.
+16. Kolory w ruletce
+Koło ruletki obejmuje przedziały o numerach od 0 do 36. Oto kolory tych przedziałów:
+• Przedział numer 0 jest zielony.
+• W zakresie od 1 do 10 przedziały nieparzyste są czerwone, a parzyste czarne.
+• W zakresie od 11 do 18 przedziały nieparzyste są czarne, a parzyste czerwone.
+• W zakresie od 19 do 28 przedziały nieparzyste są czerwone, a parzyste czarne.
+• W zakresie od 29 do 36 przedziały nieparzyste są czarne, a parzyste czerwone.
+Napisz klasę o nazwie RoulettePocket. Konstruktor tej klasy powinien przyjmować numer przedziału. W klasie należy udostępnić metodę getPocketColor, która zwraca kolor przedziału jako łańcuch znaków.
+Zademonstruj działanie tej klasy w programie, który wyświetla pytanie o numer przedziału i informację o tym, czy dany przedział jest zielony, czerwony czy czarny. Program powinien wyświetlać komunikat o błędzie, jeśli użytkownik wprowadzi numer spoza przedziału od 0 do 36.
+17. Symulator rzutów monetą
+Napisz klasę o nazwie Coin. Powinna ona zawierać następujące pole:
+• sideUp typu String. Pole to przyjmuje wartość „orzeł” lub „reszka”, określającą, która strona monety jest widoczna.
+Klasa Coin powinna też zawierać następujące metody:
+• Konstruktor bezargumentowy, który losowo określa widoczną stronę monety („orzeł” lub „reszka”) i odpowiednio inicjuje pole sideUp.
+• Metodę toss typu void, która symuluje rzut monetą. Ta metoda losowo określa widoczną stronę monety („orzeł” lub „reszka”) i odpowiednio ustawia wartość pola sideUp.
+• Metodę getSideUp, która zwraca wartość pola sideUp.
+Napisz program demonstrujący działanie klasy Coin. Ten program powinien tworzyć instancję tej klasy i wyświetlać widoczną początkowo stronę monety. Następnie należy za pomocą pętli zasymulować 20 rzutów monetą. Po każdym rzucie program ma wyświetlać widoczną stronę monety. Program powinien też zliczać orły i reszki oraz po zakończeniu pracy pętli wyświetlać uzyskane wartości.
+18. Rzucanie monetami o złotówkę
+W tym zadaniu utworzysz program z grą wykorzystujący klasę Coin z zadania 17. W tym programie należy utworzyć trzy instancje klasy Coin: reprezentujące 5, 10 i 20 groszy. W momencie rozpoczęcia gry masz 0 złotych. W każdej rundzie program rzuca symulowanymi monetami. Jeśli wypadnie orzeł, wartość monety jest dodawana do Twoich środków. Na przykład jeśli 20-groszówką wyrzucony zostanie orzeł, do Twoich środków zostanie dodanych 20 groszy. Wyrzucenie reszki nie spowoduje dodania żadnych pieniędzy. Gra kończy się, gdy Twoje wygrane wyniosą w sumie złotówkę lub więcej. Jeśli uzyskałeś dokładnie złotówkę, wygrywasz. Jeżeli suma jest wyższa, przegrywasz.
+19. Symulator gry w wędkowanie
+W tym zadaniu napiszesz program symulujący grę w wędkowanie. W tej grze rzuca się kostką o sześciu ściankach, aby ustalić, co użytkownik złowił. Każdy możliwy wynik połowu jest wart określoną liczbę punktów. Pozostają one ukryte do czasu zakończenia połowu przez użytkownika, po czym pojawia się komunikat z gratulacjami dla niego, zależny od liczby uzyskanych punktów.
+Oto sugestie dotyczące projektu gry:
+• W każdej rundzie wykonywana jest iteracja pętli, powtarzana tak długo, jak długo użytkownik chce łowić dalsze rzeczy.
+• Na początku każdej rundy program wyświetla pytanie o to, czy użytkownik chce kontynuować wędkowanie.
+• Program symuluje rzuty kostką o sześciu ściankach (wykorzystaj klasę Die)
+• Każda rzecz, jaką można wyłowić, jest reprezentowana przez liczbę oczek kostki. Na przykład 1 to „wielka ryba”, 2 to „stary but”, 3 to „mała rybka” itd.
+• Każda rzecz złowiona przez użytkownika jest warta inną liczbę punktów.
+• W pętli zliczana jest suma punktów uzyskanych przez użytkownika.
+• Po zakończeniu pracy pętli wyświetlana jest łączna liczba punktów wraz z komunikatem zależnym od tej liczby.
