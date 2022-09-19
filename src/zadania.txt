@@ -125,7 +125,8 @@ Ten plik powinien zawierać następujące liczby (po jednej na wiersz):
 124.00
 78.92
 37.55
-Następnie utwórz plik tekstowy Withdrawals.txt. Powinien on obejmować następujące liczby (po jednej na wiersz):
+Następnie utwórz plik tekstowy Withdrawals.txt. Powini
+en on obejmować następujące liczby (po jednej na wiersz):
 29.88
 110.00
 27.52
